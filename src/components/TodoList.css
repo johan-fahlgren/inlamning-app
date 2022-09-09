@@ -47,14 +47,14 @@
   background: #fff;
 }
 
-ul {
+.todo-ul {
   list-style: none;
   padding: 0;
   line-height: 2rem;
   width: 500px;
 }
 
-input {
+.todo-input {
   border: none;
   background: transparent;
   color: white;

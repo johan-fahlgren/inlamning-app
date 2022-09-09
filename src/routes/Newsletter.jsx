@@ -1,9 +1,13 @@
 import React from "react";
+import Navbar from "../components/Navbar";
+import SignUpForm from "../components/SignUp";
 
 export default function Newsletter() {
   return (
     <div>
-      <h2>NEWSLETTER PAGE</h2>
+      <Navbar />
+      <h1>NEWSLETTER</h1>
+      <SignUpForm />
     </div>
   );
 }

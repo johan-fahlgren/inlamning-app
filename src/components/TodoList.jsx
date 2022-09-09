@@ -9,7 +9,7 @@ const TodoList = () => {
     },
     {
       content: "Build a newsletter component",
-      isCompleted: false,
+      isCompleted: true,
     },
     {
       content: "Turn in assignment",
@@ -56,7 +56,7 @@ const TodoList = () => {
   return (
     <div>
       <form className="todo-list">
-        <ul>
+        <ul className="todo-ul">
           {todos.map((todo, i) => (
             <div className={`todo ${todo.isCompleted && "todo-is-completed"}`}>
               <div
@@ -66,6 +66,7 @@ const TodoList = () => {
                 {todo.isCompleted && <span>&#x2714;</span>}
               </div>
               <input
+                className="todo-input"
                 type="text"
                 value={todo.content}
                 onChange={(e) => updateTodoAtIndex(e, i)}

@@ -1,0 +1,58 @@
+.sign-up-outer {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-container {
+  height: 400px;
+  width: 800px;
+  margin: auto;
+  background-image: url("../../public/images/tyler-lastovich-hM08wZJBlK4-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.sign-up-content {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-h2 {
+  padding-top: 20px;
+}
+
+.sign-up-span {
+  margin-bottom: 10px;
+}
+
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-input {
+  width: 482px;
+  height: 24px;
+  padding-left: 10px;
+  background-color: white;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 2px solid black;
+}
+
+.subscribeBtn {
+  width: 500px;
+  margin: 20px 0;
+  padding: 10px 0;
+  font-weight: bold;
+  border-radius: 3px;
+  border: 2px solid black;
+}
