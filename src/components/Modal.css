@@ -1,0 +1,28 @@
+.modal-outer {
+  z-index: 10000;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: slategray;
+  width: 600px;
+  height: 400px;
+}
+
+.modal-h2 {
+  color: white;
+  margin: 0 0 40px 0;
+}
+
+.modal-span {
+  color: white;
+}
