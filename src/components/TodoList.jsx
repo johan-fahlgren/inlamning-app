@@ -54,7 +54,7 @@ const TodoList = () => {
   }
 
   return (
-    <div className="todoBody">
+    <div>
       <form className="todo-list">
         <ul>
           {todos.map((todo, i) => (
