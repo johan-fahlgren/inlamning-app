@@ -12,6 +12,14 @@ const TodoList = () => {
       isCompleted: true,
     },
     {
+      content: "Build a modal",
+      isCompleted: true,
+    },
+    {
+      content: "Add a footer component",
+      isCompleted: false,
+    },
+    {
       content: "Turn in assignment",
       isCompleted: false,
     },

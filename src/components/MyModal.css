@@ -1,0 +1,48 @@
+.MyModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: slategray;
+  width: 500px;
+  height: 300px;
+  border-radius: 3px;
+  border: solid white 5px;
+}
+
+.modal-h2 {
+  color: white;
+  margin: 0 0 40px 0;
+}
+
+.modal-span {
+  color: white;
+}
+
+.closeModalBtn {
+  margin-top: 40px;
+  padding: 10px 20px;
+  font-size: large;
+  color: white;
+  background-color: slategray;
+  border: solid white 3px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.closeModalBtn:hover {
+  color: slategray;
+  background-color: white;
+}

@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import "./SignUp.css";
+import "./MyModal.css";
+import MyModal from "./MyModal";
 
 const SignUpForm = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
-
-  const handelSubmit = () => {
-    //do something
-  };
+  const [openModal, setOpenModal] = useState(false);
 
   const handelNameChange = (e) => {
     setName(e.value);
@@ -26,7 +25,7 @@ const SignUpForm = () => {
             Subscribe to get the latest updated from us.
           </span>
 
-          <form className="sign-up-form" onSubmit={handelSubmit}>
+          <form className="sign-up-form">
             <input
               className="sign-up-input"
               placeholder="Input your name"
@@ -41,13 +40,27 @@ const SignUpForm = () => {
               value={email}
               onChange={handelEmailChange}
             />
-            <button className="subscribeBtn">SUBSCRIBE</button>
+            <button
+              type="button"
+              onClick={() => {
+                setOpenModal(true);
+              }}
+              className="subscribeBtn"
+            >
+              SUBSCRIBE
+            </button>
           </form>
           <span style={{ color: "white" }}>
             We will not spam you. Unsubscribe any time.
           </span>
         </div>
       </div>
+      <MyModal
+        mName={name}
+        mEmail={email}
+        open={openModal}
+        onClose={() => setOpenModal(false)}
+      />
     </div>
   );
 };
