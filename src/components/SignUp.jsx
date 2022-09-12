@@ -8,14 +8,6 @@ const SignUpForm = () => {
   const [name, setName] = useState("");
   const [openModal, setOpenModal] = useState(false);
 
-  const handelNameChange = (e) => {
-    setName(e.value);
-  };
-
-  const handelEmailChange = (e) => {
-    setEmail(e.value);
-  };
-
   return (
     <div className="sign-up-outer">
       <div className="sign-up-container">
@@ -31,14 +23,14 @@ const SignUpForm = () => {
               placeholder="Input your name"
               type="text"
               value={name}
-              onChange={handelNameChange}
+              onChange={(e) => setName(e.target.value)}
             />
             <input
               className="sign-up-input"
               placeholder="Input your email address"
               type="email"
               value={email}
-              onChange={handelEmailChange}
+              onChange={(e) => setEmail(e.target.value)}
             />
             <button
               type="button"
