@@ -17,6 +17,10 @@ const TodoList = () => {
     },
     {
       content: "Add a footer component",
+      isCompleted: true,
+    },
+    {
+      content: "Explain project in README.md",
       isCompleted: false,
     },
     {

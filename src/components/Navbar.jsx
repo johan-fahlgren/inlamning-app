@@ -13,7 +13,7 @@ const Navbar = () => {
       }}
     >
       <NavLink
-        to="/"
+        to="/home"
         style={({ isActive }) => ({
           color: isActive ? "red" : "white",
           textDecoration: isActive ? "none" : "",
