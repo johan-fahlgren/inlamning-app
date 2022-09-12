@@ -21,11 +21,11 @@ const TodoList = () => {
     },
     {
       content: "Explain project in README.md",
-      isCompleted: false,
+      isCompleted: true,
     },
     {
       content: "Turn in assignment",
-      isCompleted: false,
+      isCompleted: true,
     },
   ]);
 

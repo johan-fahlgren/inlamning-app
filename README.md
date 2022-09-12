@@ -1,6 +1,6 @@
 # React WIN21 Inlämning
 
-This assignment focuses on creating a React SPA using the create-react-app and react-route packages.
+This assignment focuses on creating a SPA with React using the create-react-app and react-route packages. It consists of three different routes with their respective components.
 
 ## Home
 
