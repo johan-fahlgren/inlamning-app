@@ -5,6 +5,11 @@ a {
   color: white;
 }
 
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 a:first-child {
   padding-bottom: 20px;
   font-size: 2.2rem;

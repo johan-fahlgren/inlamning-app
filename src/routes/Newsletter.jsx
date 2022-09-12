@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import SignUpForm from "../components/SignUp";
 
@@ -6,8 +7,8 @@ export default function Newsletter() {
   return (
     <div>
       <Navbar />
-      <h1>NEWSLETTER</h1>
       <SignUpForm />
+      <Footer />
     </div>
   );
 }

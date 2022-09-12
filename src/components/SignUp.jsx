@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./SignUp.css";
-import "./MyModal.css";
-import MyModal from "./MyModal";
+import MyModal from "./SignUpModal";
 
 const SignUpForm = () => {
   const [email, setEmail] = useState("");

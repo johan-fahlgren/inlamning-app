@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -12,11 +12,35 @@ const Navbar = () => {
         color: "white",
       }}
     >
-      <Link to="/">&#8962;</Link>
+      <NavLink
+        to="/"
+        style={({ isActive }) => ({
+          color: isActive ? "red" : "white",
+          textDecoration: isActive ? "none" : "",
+        })}
+      >
+        &#8962;
+      </NavLink>
       <div className="line" />
-      <Link to="/todos">Todos</Link>
+      <NavLink
+        to="/todos"
+        style={({ isActive }) => ({
+          color: isActive ? "red" : "white",
+          textDecoration: isActive ? "none" : "",
+        })}
+      >
+        Todos
+      </NavLink>
       <div className="line" />
-      <Link to="/newsletter">Newsletter</Link>
+      <NavLink
+        to="/newsletter"
+        style={({ isActive }) => ({
+          color: isActive ? "red" : "white",
+          textDecoration: isActive ? "none" : "",
+        })}
+      >
+        Newsletter
+      </NavLink>
     </nav>
   );
 };

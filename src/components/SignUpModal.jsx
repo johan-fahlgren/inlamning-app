@@ -1,5 +1,5 @@
 import React from "react";
-import "./MyModal.css";
+import "./SignUpModal.css";
 
 const MyModal = ({ mName, mEmail, open, onClose }) => {
   if (!open) return null;
@@ -14,7 +14,7 @@ const MyModal = ({ mName, mEmail, open, onClose }) => {
       >
         <div className="modal-container">
           <h2 className="modal-h2">Thank you {mName} for Subscribing!</h2>
-          <span className="modal-span">We will send updates to: {mEmail}</span>
+          <span className="modal-span">We will send updates to {mEmail}</span>
           <button type="button" className="closeModalBtn" onClick={onClose}>
             OK
           </button>
